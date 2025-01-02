@@ -1,0 +1,144 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+
+/* Ajuste para o fundo */
+#background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Garantir que o fundo fique atrás do conteúdo */
+}
+
+/* Corpo da página */
+body {
+    color: #3ea6ad;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  
+    z-index: 1;
+    position: relative;
+}
+
+
+/* Estilização da imagem de perfil */
+.profile-img {
+    width: 150px;
+    margin-left: 3vh;
+    margin-right: 180vh;
+    margin-bottom:180px;
+    border-radius: 60px;
+}
+
+/* Texto sobre o perfil */
+#text { 
+    font-family: Didot, serif;
+    position: relative;
+    color: #e3d7bf;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 100vh;
+    max-width: 700px;
+}
+
+/* Navbar com ícones */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:78vh; /* Posiciona a navbar para baixo da página */
+    width: 50%;
+    height:9vh;
+    background-color: #857d7d;
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.box {
+    padding: 30px;
+    width: 40px;
+    height: 70px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.box:hover {
+    width: 2vh;
+    height: 2vh;
+    background: #25d366;
+    border-radius:100% 100%;
+    color: #fff;
+    box-shadow: 0 0 20px #25d3657e;
+}
+
+.box:nth-child(2):hover {
+    background: #1877f2;
+    box-shadow: 0 0 50px #1876f285;
+}
+
+.box:nth-child(3):hover {
+    background: #d63333;
+    box-shadow: 0 0 50px #961b1b;
+}
+
+.box:nth-child(4):hover {
+    background: #857d7d;
+    box-shadow: 0 0 20px #1f1b1b;
+}
+
+.navbar p {
+    transform: translate(40px);
+}
+
+.box .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.linkedin {
+    background-color: #1877f2;
+}
+
+.mail {
+    background-color: #d63333;
+}
+
+.github {
+    background-color: #857d7d;
+}
+
+.box:hover .icon {
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0,0,0,0.26);
+}
+
+a {
+    text-decoration: none;
+    color: #e3d7bf;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <img src="fundo.png" id="background-img">
+
+    <div class="profile-container">
+        <img src="perf.jpeg" alt="Perfil de Steicie Aleixo Sousa" class="profile-img">
+    </div>
+
+    <div id="text"></div>
+
+    <div class="navbar">
+        <div class="box">
+            <a href="https://wa.me/+5585988302728">
+                <div class="icon whatsapp">    
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+                <p>Whatsapp</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://linkedin.com/in/steicie-aleixo-6053231a7">
+                <div class="icon linkedin">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <p>LinkedIn</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="mailto:steiciealeixosousa@gmail.com">
+                <div class="icon mail">
+                    <ion-icon name="mail"></ion-icon>
+                </div>
+                <p>Gmail</p>
+            </a>
+        </div> 
+        
+        <div class="box">
+            <a href="https://github.com/Staici">
+                <div class="icon github">
+                    <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <p>Github</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+<script>
+    var i = 0, text;
+    text = "Olá meu nome é Steicie Aleixo Sousa sou formada pela escola de ensino profissionalizante Professora Luiza de Teodoro Vieira da turma de Informática, atualmente estou cursando Bacharel em Ciência da Computação no IFCE maracanaú";
+    function typing(){
+        if(i < text.length){
+            document.getElementById("text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing,30);
+        }
+    }
+    typing();
+</script>
+</html>
